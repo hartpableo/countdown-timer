@@ -1,0 +1,25 @@
+{
+  "name": "countdown-timer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./src/style.css -o ./dist/css/style.css --minify",
+    "watch": "tailwindcss -i ./src/style.css -o ./dist/css/style.css --minify --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hartpableo/countdown-timer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hartpableo/countdown-timer/issues"
+  },
+  "homepage": "https://github.com/hartpableo/countdown-timer#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
