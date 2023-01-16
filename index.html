@@ -10,16 +10,31 @@
 <body class="bg-red-900 text-white">
 
     <main class="min-h-screen w-full flex justify-center items-center">
-        <div class="container py-[3rem] px-5 bg-red-900 shadow-2xl rounded-2xl border border-solid border-gray-900 text-center">
+        <div class="container pt-[3rem] px-5 pb-[4.5rem] bg-red-900 shadow-2xl rounded-2xl border border-solid border-gray-900 text-center">
             <div>
                 <h1 class="text-[2.5rem] font-light mb-[1em]">Countdown Timer</h1>
             </div>
-            <form action="#" method="post" class="flex justify-center items-center gap-7 w-full max-w-[800px] mx-auto mb-5">
-                <input type="time" name="Timer Time" id="timer-time" class="block h-full flex-grow bg-transparent border rounded max-w-[10em] text-center text-2xl py-2">
-                <input type="submit" value="Set Timer" class="block py-3 px-6 bg-black rounded-sm h-full py-2 cursor-pointer">
+            <form action="#" method="post" class="flex justify-between flex-wrap text-left items-center gap-y-3 w-full max-w-[1350px] mx-auto mb-5">
+                <input type="text" name="Hours" class="block h-full bg-transparent border rounded w-[49.5%] px-[1em] text-2xl py-2" placeholder="Hours...">
+                <input type="text" name="Minutes" class="block h-full bg-transparent border rounded w-[49.5%] px-[1em] text-2xl py-2" placeholder="Minutes...">
+                <input type="text" name="Seconds" class="block h-full flex-grow bg-transparent border rounded w-full px-[1em] text-2xl py-2" placeholder="Seconds...">
+                <button type="submit" class="mx-auto block py-3 px-6 bg-black rounded-sm h-full py-2 cursor-pointer border-none hover:bg-white hover:text-red-900">Set Timer</button>
             </form>
-            <div id="timer" class="text-[9rem] font-bold">
-                <!-- Timer here -->
+            <div id="timer" class="font-bold flex flex-row flex-nowrap justify-center items-center">
+                <div>
+                    <span id="hours" class="block text-[8rem]">00</span>
+                    <small class="block text-[22px] mt-[-.8em]">hours</small>
+                </div>
+                <small class="text-[35px] mx-[5.5rem] font-bold">:</small>
+                <div>
+                    <span id="minutes" class="block text-[8rem]">00</span>
+                    <small class="block text-[22px] mt-[-.8em]">minutes</small>
+                </div>
+                <small class="text-[35px] mx-[5.5rem] font-bold">:</small>
+                <div>
+                    <span id="seconds" class="block text-[8rem]">00</span>
+                    <small class="block text-[22px] mt-[-.8em]">seconds</small>
+                </div>
             </div>
         </div>
     </main>
